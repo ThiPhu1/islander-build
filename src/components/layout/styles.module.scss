@@ -1,0 +1,19 @@
+@import '../../common/css/styles.scss';
+@import '../../common/css/base/base';
+
+main#wrapper {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    min-height: calc(100vh - $header-height);
+    margin: 0 auto;
+    &.fixed--header {
+        &::before {
+            position: relative;
+            content: '';
+            display: block;
+            height: $header-height;
+            width: 100%;
+        }
+    }
+}

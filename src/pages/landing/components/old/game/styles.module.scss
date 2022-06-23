@@ -1,0 +1,229 @@
+$base-row-size: 68px;
+$base-width: 680px;
+$base-height: 454px;
+$row-size: calc(#{$base-row-size}*1.3); 
+$width: calc(#{$base-width}*1.3);
+$height: calc(#{$base-height}*1.3);
+
+.map-img {
+    position: absolute;
+    width:$width;
+    height: $height;
+    // top: 100%;
+    // left: 50%;
+    // transform: translate(-50%, -100%);
+    bottom: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    img {
+        &.bg {
+            width: 100%;
+            height: auto;
+            vertical-align: middle;        
+        }
+    }
+} 
+
+.scene {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    bottom: -3px;
+    .tile {
+        position: absolute;
+        width: calc(100% / 7);
+        height: auto;
+        transform: translateX(-50%);
+        cursor: pointer;
+        // clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        img {
+            width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
+        h6 {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50% , -25%);
+            font-size: 0.55rem;
+        }
+        &.active,
+        &:hover {
+            &:after {
+                cursor: pointer;
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background-image: url('../../../../../common/images/map/tile-hover.png');
+                background-position: top center;
+                background-size: contain;
+            }
+        }
+    }
+   
+    button {
+        background: transparent;
+    }
+    
+    
+      
+    
+    
+    #copy.player {
+        position: relative;
+        height: $row-size;
+        width: $row-size;
+        transform-origin: 0 0;
+        transform-style: preserve-3d;
+        perspective: 800px;
+        transform: translate(0px, 0px);
+        .side {
+          position: absolute;
+          width: $row-size;
+          height: $row-size;
+          background: rgba(blue, 0.8);
+          border: 1px solid rgba(blue, 0.8);
+          text-align: center;
+        }
+        .img {
+            transform: rotateY(0deg) translateZ(0px);
+        }
+    }
+}
+
+.grid-map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    // top: 100%;
+    // left: 50%;
+    // transform: translate(-50%, -100%);
+    z-index: 9;
+    bottom: 0;
+    .toolbox {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 8px;
+        position: absolute;
+        // bottom: 25%; 
+        // left: 50%; 
+        justify-content: center;
+        transform: translate(-50%, 50%);
+
+        button {
+            width: 2.5rem;
+            height: 2.5rem;
+            font-size: 1rem;
+            padding: 0.5rem;
+            border-radius: 8px;
+
+            svg {
+                width: 16px;
+                height: 16px;
+            }
+
+            &.btn-delete {
+                background-color: red;
+
+                svg > path {
+                    fill: white
+                }
+            }
+        }
+    }
+
+    .grid {
+        transform-style: preserve-3d;
+        position: absolute;
+        
+        &.iso {
+            transform: rotateX(54deg) rotateY(0deg) rotateZ(-45deg);
+            .row {
+                height: $row-size;
+                display: flex;
+                flex-direction: row;
+                pointer-events: none;
+            }
+            .tile {
+                // border: 1px solid cyan;
+                // border-style: inset;
+                height: $row-size;
+                width: $row-size;
+                pointer-events: auto;
+                position: relative;
+                cursor: pointer;
+                outline: none; // not good
+                // &:hover {
+                //     background-color: rgba(green, 0.4);
+                // }
+                h6 {
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    transform: translate(0, 10px);
+                    // font-size: 0.55rem;
+                }
+            }
+        }
+    }
+}
+
+.dom {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // top: 100%;
+    // left: 50%;
+    // transform: translate(-50%, -100%);
+    // bottom: 0;
+    z-index: 8;
+
+
+    img {
+        position: absolute;
+        height: auto;
+        cursor: pointer;
+        &.el_house_2x3 {
+            transform: translate(-40%, -80%);
+        }
+        &.el_boat_01_1x3{
+            transform: translate(-54%, -54%);
+        }
+        &.el_coconut_1x1 {
+            transform: translate(-50%, -50%);
+        }
+        &.el_byre_2x2 {
+            transform: translate(-44%, -54%);
+        }
+        &.el_bush_01_1x1 {
+            transform: translate(-50%, -50%);
+        }
+        &.el_pigsty_01_2x1 {
+            transform: translate(-62%, -46%);
+        }
+        
+        &.size-1x1 {
+            &:hover {
+                -webkit-filter: drop-shadow(2px 1px 0 red)
+                  drop-shadow(-1px -1px 0 red);
+                filter: drop-shadow(2px 1px 0 red) 
+                        drop-shadow(-1px -1px 0 red);
+            }
+        }
+       
+    }
+}

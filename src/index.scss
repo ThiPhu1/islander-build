@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import './common/css/styles.scss';
+@import './common/css/base/base';
+
+
+body {
+    background-color: #fff !important;
+    margin: 0;
+    // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    //     'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    //     'Helvetica Neue', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 0 !important;
+}
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+
+    @include xl-down {
+        font-size: 2.75rem;
+    }
+
+    @include md-down {
+        font-size: 2.5rem;
+    }
+
+    @include sm-down {
+        font-size: 2rem;
+    }
+}
+
+h2 {
+    font-size: 2.5rem;
+
+    @include xl-down {
+        font-size: 2.25rem;
+    }
+
+    @include md-down {
+        font-size: 2rem;
+    }
+
+    @include sm-down {
+        font-size: 1.5rem;
+    }
+}
+
+h3 {
+    font-size: 2rem;
+
+    @include xl-down {
+        font-size: 1.75rem;
+    }
+    @include md-down {
+        font-size: 1.5rem;
+    }
+    @include sm-down {
+        font-size: 1rem;
+    }
+}
+
+h4 {
+    font-size: 1.5rem;
+
+    @include md-down {
+        font-size: 1rem;
+    }
+    @include md-down {
+        font-size: 0.9rem;
+    }
+}
+
+h5 {
+    font-size: 1rem;
+    @include md-down {
+        font-size: 0.75rem;
+    }
+}
+
+p {
+    font-size: 1rem;
+
+    // @include xl-down {
+    //     font-size: 0.75rem;
+    // }
+
+    @include md-down {
+        font-size: 0.75rem;
+    }
+}
+
+.extra-h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: var(--space-xxxx-large);
+}
+.h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: var(--space-large);
+}
+.h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: var(--space-s-medium);
+}
+.h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: var(--space-medium);
+}
+.h4 {
+    font-family: 'Nunito', sans-serif;
+    font-size: var(--space-small);
+}
+.h5 {
+    font-family: 'Nunito', sans-serif;
+    font-size: var(--space-x-small);
+}
+.h6 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.625rem;
+}
+.p {
+    font-family: 'Nunito', sans-serif;
+    font-size: var(--space-x-small);
+}
+.extra-bold {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+}
+.bold-600 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+.bold {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+.bold-500 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+}
+.regular {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+.thin {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+}
+
+@include xl-down {
+    .extra-h1 {
+        font-family: 'Nunito', sans-serif;
+        font-size: var(--space-large);
+    }
+    .h1 {
+        font-family: 'Nunito', sans-serif;
+        font-size: var(--space-s-medium);
+    }
+    .h2 {
+        font-family: 'Nunito', sans-serif;
+        font-size: var(--space-medium);
+    }
+    .h3 {
+        font-family: 'Nunito', sans-serif;
+        font-size: var(--space-small);
+    }
+    .h4 {
+        font-family: 'Nunito', sans-serif;
+        font-size: var(--space-x-small);
+    }
+    .h5 {
+        font-family: 'Nunito', sans-serif;
+        font-size: var(--space-xx-small);
+    }
+}
+
+@include md-down {
+    .extra-h1 {
+        font-family: 'Nunito', sans-serif;
+        font-size: var(--space-ss-medium);
+    }
+    .h1 {
+        font-family: 'Nunito', sans-serif;
+        font-size: var(--space-s-medium);
+    }
+    .h2 {
+        font-family: 'Nunito', sans-serif;
+        font-size: var(--space-small);
+    }
+    .h3 {
+        font-family: 'Nunito', sans-serif;
+        font-size: var(--space-x-small);
+    }
+    .h4 {
+        font-family: 'Nunito', sans-serif;
+        font-size: var(--space-xx-small);
+    }
+    .h5 {
+        font-family: 'Nunito', sans-serif;
+        font-size: var(--space-xxx-small);
+    }
+}
+
+.color-white {
+    color: #fff;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.secondary-color {
+    color: var(--theme-btn-secondary-color_v1);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+.mt-2 {
+    margin-top: 2rem !important;
+}
+.mb-2 {
+    margin-bottom: 2rem !important;
+}
+.mt-1 {
+    margin-top: 1rem !important;
+}
+.mb-1 {
+    margin-bottom: 1rem !important;
+}
+.mt-1_5 {
+    margin-top: 1.5rem !important;
+}
+.mb-1_5 {
+    margin-bottom: 1.5rem !important;
+}
+.mb-0_5 {
+    margin-bottom: 0.5rem !important;
+}
+
+.react-multi-carousel-dot-list {
+    gap: 1rem;
+    .react-multi-carousel-dot {
+        button {
+            border: 0.5px solid var(--theme-btn-primary-color_v1);
+            background-color: transparent;
+        }
+    }
+    .react-multi-carousel-dot--active {
+        button {
+            border: 0.5px solid var(--theme-btn-primary-color_v1);
+            background-color: var(--theme-btn-primary-color_v1);
+        }
+    }
+}
+
+.gold {
+    background-color: #fdc834;
+}
+.silver {
+    background-color: #bab7b8;
+}
+.bronze {
+    background-color: #f09c74;
+}
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+ul {
+    list-style-type: none;
+}
+
+#root {
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-image: url('./common/images/bg.webp');
+        // opacity: 0.4;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        -webkit-backdrop-filter: blur(250px);
+        backdrop-filter: blur(250px);
+        background-color: rgba(255, 255, 255, 0.01);
+        z-index: -1;
+    }
+}
+
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    #root {
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-image: url('./common/images/bg.webp');
+            // opacity: 0.4;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            -webkit-backdrop-filter: blur(250px);
+            backdrop-filter: blur(250px);
+            background-color: rgba(255, 255, 255, 0.01);
+            z-index: -1;
+        }
+    }
+  }
+  
+  /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+  @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    #root {
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-image: url('./common/images/bg.webp');
+            // opacity: 0.4;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            -webkit-backdrop-filter: blur(250px);
+            backdrop-filter: blur(250px);
+            background-color: rgba(255, 255, 255, 0.01);
+            z-index: -1;
+        }
+    }
+  }

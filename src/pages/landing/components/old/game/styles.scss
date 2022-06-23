@@ -1,0 +1,582 @@
+#dom-hover,
+#dom {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // top: 100%;
+    // left: 50%;
+    // transform: translate(-50%, -100%);
+    
+    .el {
+        position: absolute;
+        max-width: 100%;
+        // &::before {
+        //     content: "";
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 100%;
+        //     background-color: rgba(green, 0.4);
+        // }
+        /**
+            SEA PORT
+        **/
+        // &.el_boat_01_1x3{
+        //     transform: translate(-25%, -75%);
+        //     // clip-path: polygon(33% 54%, 39% 20%, 58% 17%, 92% 50%, 100% 63%, 73% 76%, 25% 100%, 0 88%, 12% 81%, 9% 61%);
+        // }
+        // /**
+        //     HOUSE
+        // **/
+
+        // &.el_house_avalaunch_3x2 {
+        //     transform: translate(-19%, -54%);
+        // }
+
+        // &.el_house_lighthouse_3x3 {
+        //     transform: translate(-16%, -73%)
+        // }
+        // &.el_house_trader_joe_3x3,
+        // &.el_house_kalao_3x3,
+        // &.el_house_colony_3x3 {
+        //     transform: translate(-17%, -63%);
+        // }
+
+        // &.el_house_pangolin_3x3 {
+        //     transform: translate(-16%, -56%);
+        // }
+
+        // &.el_house_muhabbit_capital_2x2,
+        // &.el_house_maximizer_2x2,
+        // &.el_house02_2x2,
+        // &.el_house03_2x2,
+        // &.el_house04_2x2,
+        // &.el_house_canary_exchange_2x2,
+        // &.el_house_avaware_2x2 {
+        //     transform: translate(-24%, -66%);
+        // }
+       
+        // &.el_house_avaxtars_2x3 {
+        //     transform: translate(-19%, -72%);
+        // }
+
+        // &.el_house_talecraft_2x3,
+        // &.el_house_roco_finance_2x3 {
+        //     transform: translate(-20%, -73%);
+        // }
+        // &.el_house_yay_games_2x3 {
+        //     transform: translate(-20%, -67%);
+        // }
+        // &.el_house_01_2x3 {
+        //     transform: translate(-20%, -67%);
+        // }
+        // &.mailbox_01_1x1 {
+        //     transform: translate(-50%, -50%);
+        //     // clip-path: polygon(20% 20%, 65% 5%, 100% 60%, 100% 76%, 53% 100%, 0 75%);
+        // }
+
+        /**
+            TREE
+        **/
+        
+        // &.tree_01_1x1,
+        // &.tree_02_1x1,
+        // &.tree_03_1x1
+        // {
+        //     transform: translate(-50%, -65%);
+        //     &::before {
+        //         clip-path: polygon(50% 140px, 101% 83%, 51% 101%, -2px 84%)
+        //     }
+        // }
+
+        // &.tree_06_1x1,
+        // &.tree_07_1x1,
+        // &.tree_08_1x1
+        // {
+        //     transform: translate(-50%, -60%);
+        //     &::before {
+        //         clip-path: polygon(50% 116px, 75% 80%, 50% 100%, 61px 80%)
+        //     }
+        // }
+        // &.tree_04_1x1 {
+        //     transform: translate(-50%, -71%);
+        //     &::before {
+        //         clip-path: polygon(50% 187px, 75% 86%, 50% 100%, 62px 86%)
+        //     }
+        // }
+        // &.tree_05_1x1 {
+        //     transform: translate(-50%, -71%);
+        //     &::before {
+        //         clip-path: polygon(50% 240px, 75% 83%, 50% 94%, 62px 83%)
+        //     }
+        // }
+        // &.coconut_02_1x2 {
+        //     transform: translate(-35%, -68%);
+        //     // clip-path: polygon(28% 0%, 77% 12%, 70% 56%, 101% 69%, 39% 97%, 0 83%, 0 19%);
+        // }
+        // &.coconut_03_1x2 {
+        //     transform: translate(-35%, -68%);
+        //     // clip-path: polygon(38% 0, 76% 0, 99% 33%, 100% 54%, 100% 70%, 34% 100%, 0 90%, 0 33%);
+        // }
+        
+        // &.el_01_1x1 {
+        //     transform: translate(-50%, -50%);
+        // }
+        
+        // &.chump_01_1x1,
+        // &.root_01_1x1,
+        // &.el_bush_01_1x1,
+        // &.el_bush_02_1x1,
+        // &.el_bush_03_1x1,
+        // &.el_bush_04_1x1,
+        // &.el_bush_05_1x1,
+        // &.el_bush_06_1x1,
+        // &.el_bush_07_1x1,
+        // &.el_bush_08_1x1,
+        // &.el_bush_09_1x1,
+        // &.el_bush_10_1x1
+        //  {
+        //     transform: translate(-50%, -50%);
+        //     &::before {
+        //         clip-path:polygon(50% 52%, 100% 76%, 50% 101%, 0px 76%)
+        //     }
+        // }
+       
+        // &.el_bush_01_1x3 {
+        //     transform: translate(-50%, -50%);
+        // }
+
+        /**
+          MOUNTAIN
+        **/
+        &.rock_01_1x1,
+        &.rock_02_1x1,
+        &.rock_03_1x1,
+        &.rock_04_1x1,
+        &.rock_05_1x1,
+        &.rock_06_1x1,
+        &.rock_07_1x1, 
+        &.rock_08_1x1 {
+            
+            // transform: translate(-50%, -50%);
+            // transform: translate(-45%, -57%);
+            transform: translate(-50%, -55%);
+            // clip-path: polygon(12% 54%, 40% 40%, 81% 58%, 102% 77%, 51% 101%, 0 81%);
+        }
+        &.mountain_01_2x3 {
+            transform: translate(-40%, -79%);
+            // clip-path: polygon(38% 0, 60% 0, 100% 25%, 100% 70%, 40% 100%, 0% 80%, 0% 60%, 15% 50%, 15% 25%);
+        }
+        &.mountain_02_2x2 {
+            transform: translate(-25%, -71%);
+        }
+        &.mountain_03_2x2 {
+            transform: translate(-25%, -71%);
+        }
+        &.mountain_04_2x3 {
+            transform: translate(-20%, -71%);
+        }
+        &.mountain_05_2x2 {
+            transform: translate(-24%, -57%);;
+        }
+        &.mountain_06_2x2 {
+            transform: translate(-24%, -66%);;
+        }
+        &.mountain_07_3x2 {
+            transform: translate(-19%, -63%);;
+        }
+        &.mountain_08_3x2 {
+            transform: translate(-20%, -64%);
+        }
+
+        &.mountain_09_4x2,
+        &.mountain_10_4x2,
+        &.mountain_11_4x2 {
+            transform: translate(-16%, -54%);
+        }
+
+        &.mountain_12_2x5 {
+            transform: translate(-14%, -77%);
+        }
+
+        &.balloon_01_1x2 {
+            transform: translate(-35%, -98%)
+        }
+
+        // // ANIMAL
+        // &.animal_01_2x2,
+        // &.animal_02_2x2,
+        // &.animal_03_2x2 {
+        //     transform:  translate(-25%, -38%);
+        // }
+        // &.animal_04_2x1 {
+        //     transform: translate(-32%, -39%);
+        // }
+
+        // SEAPORT
+        &.seaport_01_2x2,
+        &.seaport_02_2x2,
+        &.seaport_03_2x2,
+        &.seaport_04_2x2,
+        &.seaport_05_2x2 {
+            transform: translate(-25%, -38%);
+        }
+
+
+        &.seaport_06_2x2,
+        &.seaport_07_2x2 {
+            transform: translate(-25%, -57%);
+        }
+
+        &.boat_01_1x3{
+            transform: translate(-25%, -71%);
+        }
+
+        &.size-1x1 {
+            &:hover {
+                -webkit-filter: drop-shadow(2px 1px 0 red)
+                  drop-shadow(-1px -1px 0 red);
+                filter: drop-shadow(2px 1px 0 red) 
+                        drop-shadow(-1px -1px 0 red);
+            }
+        }
+        &::before {
+            content: "";
+            // background-color: rgba($color: red, $alpha: 0.4);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        img {
+            position: relative;
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            left: 0;
+            top: 0;
+
+            &.el__img--targeted {
+                filter: drop-shadow(2px 2px 0 red) 
+                        drop-shadow(-2px -2px 0 red);
+            }
+        }
+    }
+    
+}
+
+#dom-hover {
+    .el {
+        img {
+            opacity: 0.45;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(green, 0.4);
+        }
+        &.error {
+            &::before {
+                background-color: rgba(red, 0.4);
+            }
+        }
+        // &.balloon_01_1x2 {
+        //     &::before {
+        //         display: none;
+        //     }
+        // }
+        /**
+            HOUSE
+        **/
+
+        // &.el_house_avalaunch_3x2 {
+        //     &::before {
+        //         clip-path: polygon(40% 45%, 100% 72%, 60% 90%, 0% 63%);
+        //     }
+        // }
+
+        // &.el_house_lighthouse_3x3 {
+        //     &::before {
+        //         clip-path: polygon(50% 60%, 100% 80%, 51% 100%, 0% 80%);
+        //     }
+        // }
+        // &.el_house_trader_joe_3x3,
+        // &.el_house_kalao_3x3,
+        // &.el_house_colony_3x3 {
+        //     &::before {
+        //         clip-path: polygon(50% 46%, 100% 73%, 50% 100%, 0% 73%);
+        //     }
+        // }
+        // &.el_house_pangolin_3x3 {
+        //     &::before {
+        //         clip-path: polygon(50% 34%, 100% 68%, 50% 100%, 0% 68%);
+        //     }
+        // }
+
+        // &.el_house_muhabbit_capital_2x2,
+        // &.el_house_maximizer_2x2,
+        // &.el_house02_2x2,
+        // &.el_house03_2x2,
+        // &.el_house04_2x2,
+        // &.el_house_canary_exchange_2x2,
+        // &.el_house_avaware_2x2 {
+        //     &::before {
+        //         clip-path: polygon(50% 55%, 100% 77%, 50% 99%, 1% 77%);
+        //     }
+        // }
+
+        // &.el_house_avaxtars_2x3 {
+        //     &::before {
+        //         clip-path: polygon(60% 54%, 100% 72%, 40% 100%, 0% 82%);
+        //     }
+        // }
+        // &.el_house_talecraft_2x3,
+        // &.el_house_roco_finance_2x3 {
+        //     &::before {
+        //         clip-path: polygon(60% 56%, 100% 73%, 40% 100%, 0% 83%);
+        //     }
+        // }
+        // &.el_house_yay_games_2x3,
+        // &.el_house_01_2x3 {
+        //     &::before {
+        //         clip-path: polygon(60% 46%, 100% 68%, 40% 100%, 0% 78%);
+        //     }
+        // }
+        // &.mailbox_01_1x1 {
+        //     &::before {
+        //         clip-path: polygon(50% 50%, 104% 77%, 55% 102%, 0 75%);
+        //     }
+        // }
+        // &.el_pigsty_01_2x1 {
+        //     &::before {
+        //         clip-path: polygon(0 47%, 34% 23%, 100% 70.5%, 73% 100%);
+        //     }
+        // }
+        // &.seaport_01_2x2,
+        // &.el_byre_2x2 {
+        //     &::before {
+        //         clip-path: polygon(47% 16%, 98% 55%, 47% 95%, 0% 56%);
+        //     }
+        // }
+        // /**
+        //     TREE
+        // **/
+        // &.coconut_01_1x1 {
+        //     &::before {
+        //         clip-path: polygon(50% 50%, 101% 73%, 50% 96%, 0 73%);
+        //     }
+        // }
+        // &.coconut_02_1x2 {
+        //     &::before {
+        //         clip-path: polygon(86% 48%, 108% 80%, 31% 100%, 0 84%);
+        //     }
+        // }
+        // &.coconut_03_1x2 {
+        //     &::before {
+        //         clip-path: polygon(69% 53%, 108% 72%, 31% 100%, 0 84%);
+        //     }
+        // }
+        // &.el_01_1x1 {
+        //     &::before {
+        //         clip-path: polygon(50% 50%, 109% 80%, 54% 102%, 0 77%);
+        //     }
+        // }
+
+        // &.tree_01_1x1,
+        // &.tree_02_1x1,
+        // &.tree_03_1x1
+        // {
+        //     &::before {
+        //         clip-path: polygon(50% 140px, 101% 83%, 51% 101%, -2px 84%)
+        //     }
+        // }
+
+        // &.tree_06_1x1,
+        // &.tree_07_1x1,
+        // &.tree_08_1x1
+        // {
+        //     &::before {
+        //         clip-path: polygon(50% 116px, 75% 80%, 50% 100%, 61px 80%)
+        //     }
+        // }
+        // &.tree_04_1x1 {
+        //     &::before {
+        //         clip-path: polygon(50% 187px, 75% 86%, 50% 100%, 62px 86%)
+        //     }
+        // }
+        // &.tree_05_1x1 {
+        //     &::before {
+        //         clip-path: polygon(50% 240px, 75% 83%, 50% 94%, 62px 83%)
+        //     }
+        // }
+
+        // // &.chump_01_1x1,
+        // // &.root_01_1x1,
+        // // &.el_bush_01_1x1,
+        // // &.el_bush_02_1x1,
+        // // &.el_bush_03_1x1 {
+        // //     &::before {
+        // //         clip-path:polygon(50% 52%, 100% 76%, 50% 101%, 0px 76%)
+        // //     }
+        // // }
+  
+        // &.chump_01_1x1,
+        // &.root_01_1x1,
+        // &.el_bush_01_1x1,
+        // &.el_bush_02_1x1,
+        // &.el_bush_03_1x1,
+        // &.el_bush_04_1x1,
+        // &.el_bush_05_1x1,
+        // &.el_bush_06_1x1,
+        // &.el_bush_07_1x1,
+        // &.el_bush_08_1x1,
+        // &.el_bush_09_1x1,
+        // &.el_bush_10_1x1
+        //  {
+        //     &::before {
+        //         clip-path:polygon(50% 52%, 100% 76%, 50% 101%, 0px 76%)
+        //     }
+        // }
+
+        /**
+          MOUNTAIN
+        **/
+        // &.rock_01_1x1,
+        // &.rock_02_1x1,
+        // &.rock_03_1x1,
+        // &.rock_04_1x1,
+        // &.rock_05_1x1,
+        // &.rock_06_1x1,
+        // &.rock_07_1x1,
+        // &.rock_08_1x1 {
+        //     &::before {
+        //         // clip-path:polygon(50% 52%, 100% 76%, 50% 101%, 0px 76%);
+        //         // clip-path: polygon(49% 50%, 100% 71%, 51% 91%, 0% 71%);
+        //         clip-path: polygon(51% 56%, 100% 75%, 50% 95%, 0% 75%);
+        //     }
+        // }
+        // &.mountain_01_2x3 {
+        //     &::before {
+        //         clip-path: polygon(60% 50%, 100% 70%, 40% 100%, 0% 80%);
+        //     }
+        // }
+        // &.mountain_02_2x2 {
+        //     transform: translate(-25%, -71%);
+
+        //     &::before {
+        //         clip-path:  polygon(50% 62%, 100% 81%, 50% 99%, 0% 81%);
+        //     }
+        // }
+        // &.mountain_03_2x2 {
+        //     transform: translate(-25%, -71%);
+
+        //     &::before {
+        //         clip-path: polygon(50% 62%, 100% 81%, 50% 99%, 0% 81%);
+        //     }
+        // }
+        // &.mountain_04_2x3 {
+        //     transform: translate(-20%, -71%);
+
+        //     &::before {
+        //         clip-path: polygon(60% 54%, 100% 72%, 40% 99%, 0% 81%);
+        //     }
+        // }
+        // &.mountain_05_2x2 {
+        //     transform: translate(-24%, -57%);;
+
+        //     &::before {
+        //         clip-path: polygon(50% 44%, 100% 72%, 50% 100%, 0% 72%);
+        //     }
+        // }
+        // &.mountain_06_2x2 {
+        //     transform: translate(-24%, -66%);;
+
+        //     &::before {
+        //         clip-path: polygon(49% 56%, 100% 78%, 50% 100%, 0% 78%);
+        //     }
+        // }
+        // &.mountain_07_3x2 {
+        //     transform: translate(-19%, -63%);;
+
+        //     &::before {
+        //         clip-path: polygon(39% 55%, 100% 82%, 60% 100%, 0% 73%);
+        //     }
+        // }
+        // &.mountain_08_3x2 {
+        //     transform: translate(-20%, -64%);
+
+        //     &::before {
+        //         clip-path: polygon(41% 55%, 100% 83%, 61% 100%, 0 74%);
+        //     }
+        // }
+
+        // &.mountain_09_4x2,
+        // &.mountain_10_4x2,
+        // &.mountain_11_4x2 {
+        //     &::before {
+        //         clip-path: polygon(33% 46%, 100% 82%, 66% 100%, 0% 64%);
+        //     }
+        // }
+
+        // &.mountain_12_2x5 {
+        //     &::before {
+        //         clip-path: polygon(71% 46.5%, 100% 62%, 29% 100%, 1% 85%);
+        //     }
+        // }
+
+        // // ANIMAL
+        // &.animal_01_2x2,
+        // &.animal_02_2x2,
+        // &.animal_03_2x2 {
+        //     transform: translate(-25%, -38%);
+
+        //     &::before {
+        //         clip-path: polygon(50% 20%, 100% 58%, 50% 97%, 0% 59%);
+        //     }
+        // }
+        // &.animal_04_2x1 {
+        //     transform: translate(-32%, -39%);
+
+            // &::before {
+            //     clip-path: polygon(31% 40%, 98% 79%, 65% 98%, 0% 60%);
+
+            // }
+        // }
+
+        // SEAPORT
+        // &.seaport_01_2x2,
+        // &.seaport_02_2x2,
+        // &.seaport_03_2x2,
+        // &.seaport_04_2x2,
+        // &.seaport_05_2x2 {
+        //     transform: translate(-25%, -38%);
+
+        //     &::before {
+        //         clip-path: polygon(50% 20%, 100% 58%, 50% 97%, 0% 59%);
+        //     }
+        // }
+
+        // &.seaport_06_2x2,
+        // &.seaport_07_2x2 {
+        //     transform: translate(-25%, -57%);
+
+        //     &::before {
+        //         clip-path: polygon(49% 44%, 100% 72%, 50% 100%, 0% 72%);
+        //     }
+        // }
+
+        // &.boat_01_1x3{
+        //     &::before {
+        //         clip-path: polygon(75% 44%, 100% 58%, 25% 100%, 0% 86%);
+        //     }
+        // }
+    }
+}
+
+#dom-toolbox {
+    z-index: 999999;
+}

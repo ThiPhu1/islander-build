@@ -1,0 +1,23 @@
+version: '3'
+services:
+    client_nginx:
+        image: nginx:mainline-alpine
+        container_name: client_nginx
+        restart: unless-stopped
+        volumes:
+            - ./nginx:/etc/nginx/conf.d
+            - client_staging_build:/var/www/html
+        expose:
+            - '80'
+        environment:
+            - VIRTUAL_HOST=theislander.local,avalander.io
+            - LETSENCRYPT_HOST=avalander.io
+        networks:
+            - nginx-network
+
+volumes:
+    client_staging_build:
+
+networks:
+    nginx-network:
+        external: true

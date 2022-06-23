@@ -1,0 +1,152 @@
+$base-row-size: 68px;
+$base-width: 680px;
+$base-height: 454px;
+$row-size: calc(#{$base-row-size}* 1.3);
+$width: calc(#{$base-width}* 1.3);
+$height: calc(#{$base-height}* 1.3);
+
+.world {
+    &.fullscreen {
+    }
+
+    position: absolute;
+    width: $width;
+    height: $height;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    .world-floor {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .element-container,
+    .element-placeholder {
+        z-index: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        .el {
+            user-select: none;
+            position: absolute;
+            max-width: 100%;
+
+            &--placeholder {
+                opacity: 0.5;
+            }
+
+            &.targeted {
+                img {
+                    -webkit-filter: drop-shadow(2px 1px 0 red)
+                        drop-shadow(-1px -1px 0 red);
+                    filter: drop-shadow(2px 1px 0 red)
+                        drop-shadow(-1px -1px 0 red);
+                }
+            }
+
+            .el__tile {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            img {
+                position: relative;
+                width: 100%;
+                height: auto;
+                left: 0;
+                top: 0;
+
+                // &.el__img--targeted {
+                //     filter: drop-shadow(2px 2px 0 red)
+                //         drop-shadow(-2px -2px 0 red);
+                // }
+            }
+        }
+    }
+    .element-toolbox {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 8px;
+        position: absolute;
+        // bottom: 25%;
+        // left: 50%;
+        justify-content: center;
+        transform: translate(-50%, 50%);
+
+        button {
+            width: 2.5rem;
+            height: 2.5rem;
+            font-size: 1rem;
+            padding: 0.5rem;
+            border-radius: 8px;
+
+            svg {
+                width: 16px;
+                height: 16px;
+            }
+
+            &.btn-delete {
+                background-color: red;
+
+                svg > path {
+                    fill: white;
+                }
+            }
+        }
+    }
+
+    .grid {
+        transform-style: preserve-3d;
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+
+        &.iso {
+            transform: rotateX(54deg) rotateY(0deg) rotateZ(-45deg);
+            .row {
+                height: $row-size;
+                display: flex;
+                flex-direction: row;
+                pointer-events: none;
+            }
+            .tile {
+                height: $row-size;
+                width: $row-size;
+                pointer-events: auto;
+                position: relative;
+                cursor: pointer;
+                outline: none;
+                h6 {
+                    display: none;
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    transform: translate(0, 10px);
+                    // font-size: 0.55rem;
+                }
+
+                &.bordered {
+                    border: 1px solid cyan;
+                    opacity: 0.4;
+                    border-style: inset;
+                }
+
+                &.debugging {
+                    h6 {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

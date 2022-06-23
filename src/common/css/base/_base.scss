@@ -1,0 +1,78 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 100%;
+    font-family: 'Roboto', Sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+:root {
+    /** SPACE VAR START **/
+    --space-xxxxx-small: 0.125rem; /* 2px */
+    --space-xxxx-small: 0.25rem; /* 4px */
+    --space-xxx-small: 0.375rem; /* 6px */
+    --space-xx-small: 0.5rem; /* 8px */
+    --space-x-small: 0.75rem; /* 12px */
+    --space-small: 1rem; /* 16px */
+    --space-medium: 1.25rem; /* 20px */
+    --space-s-medium: 1.5rem; /* 24px */
+    --space-ss-medium: 1.75rem; /* 28px */
+    --space-large: 2rem; /* 32px */
+    --space-x-large: 2.25rem; /* 36px */
+    --space-xx-large: 2.5rem; /* 40px */
+    --space-xxx-large: 2.75rem; /* 44px */
+    --space-xxxx-large: 3rem; /* 48px */
+    --space-xxxxx-large: 3.5rem; /* 56px */
+    --space-4rem: 4rem; /* 64px */
+    --space-5rem: 5rem; /* 80px */
+    --space-6rem: 6rem; /* 96px */
+    --space-7rem: 7.5rem; /* 120px */
+    --space-8rem: 8.125rem; /* 130px */
+    --space-9rem: 9rem; /* 144px */
+    --space-10rem: 10rem; /* 160px */
+    --space-12rem: 12rem; /* 190px */
+    --space-13rem: 13rem; /* 208px */
+    --space-14rem: 14rem; /* 224px */
+    --space-15rem: 15rem; /* 240px */
+    --space-x-15rem: 15.75rem; /* 252px */
+    --space-16rem: 16rem; /* 256px */
+    --space-17rem: 17rem; /* 272px */
+    --space-18rem: 18rem; /* 288px */
+    --space-20rem: 20rem; /* 320px */
+    --space-21rem: 21rem; /* 336px */
+    --space-22rem: 22rem; /* 360px */
+    --space-23rem: 23rem; /* 360px */
+    --space-25rem: 25rem; /* 400px */
+    --space-26rem: 26rem; /* 416px */
+    --space-28rem: 28rem; /* 448px */
+    --space-30rem: 30rem; /* 480px */
+    --space-35rem: 35rem; /* 560px */
+    --space-37rem: 37rem; /* 590px */
+    --space-40rem: 40rem; /* 640px */
+    /** SPACE VAR END **/
+
+    /* ------- Color Pallete ------- */
+    --theme-btn-primary-color_v1: #3d3660;
+    --theme-btn-primary-color_v2: #5c5686;
+    --theme-btn-primary-color_v3: #37315C;
+    --theme-btn-primary-color_darker: #302b54;
+    --theme-btn-disabled-color: #ccc;
+    --theme-btn-dark-text: #362439;
+    --theme-btn-dark-color: #362842;
+    --theme-color-white: #ffffff;
+    --theme-color-black: #000000;
+    --theme-btn-secondary-color_v1: #f09c74;
+    --theme-divider-color: #e0e0e0;
+    --theme-grey-text-color: #959595;
+}

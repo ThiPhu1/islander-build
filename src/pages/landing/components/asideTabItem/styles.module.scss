@@ -1,0 +1,19 @@
+li.islander-sidebar--tabs-list-item {
+    width: 56px;
+    height: 56px;
+    align-self: stretch;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0 auto 16px;
+    border-radius: 16px;
+    cursor: pointer;
+    &.active,
+    &:hover {
+        background-color: rgba(244, 245, 246, 0.8);
+    }
+}

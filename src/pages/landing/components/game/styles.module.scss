@@ -1,0 +1,11 @@
+@import '../../../../common/css/styles.scss';
+@import '../../../../common/css/base/base';
+
+.islander-builder {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: $lg-desktop;
+    width: 100%;
+    padding: 20px 40px;
+}

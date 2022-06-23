@@ -1,0 +1,95 @@
+@import '../../common/css/styles.scss';
+
+header#header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 0;
+    left: 0;
+    -webkit-backdrop-filter: blur(79px);
+    backdrop-filter: blur(79px);
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 999;
+    width: 100%;
+    &.fixed--header {
+        position: fixed;
+    }
+    .wrap {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: $lg-desktop;
+        width: 100%;
+        padding: 0 40px;
+        height: $header-height;
+        align-items: center;
+    }
+    #logo {
+        width: 169px;
+        margin: 0 auto 0 0;
+        img {
+            width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
+    }
+    .navigation {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        ul.nav-lists {
+            flex-grow: 0;
+            font-family: "Poppins";
+            font-size: 17px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.29;
+            letter-spacing: -0.41px;
+            text-align: left;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 44px 0 0;
+            li.nav-lists--item {
+                padding: 0 22px;
+                a {
+                    text-decoration: none;
+                    color: #000;
+                }
+                &:hover {
+                    a {
+                        color: #007aff;
+                    }
+                }
+            }
+        }
+        button {
+            &.connect {
+                height: 48px;
+                flex-grow: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 6px;
+                padding: 0px 30px;
+                border-radius: 1000px;
+                background-color: #1c1c1e;
+                text-transform: uppercase;
+                font-family: Poppins;
+                font-size: 14px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.57;
+                letter-spacing: -0.41px;
+                text-align: left;
+                color: #fff;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}

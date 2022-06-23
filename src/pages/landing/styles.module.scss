@@ -1,0 +1,160 @@
+@import '../../common/css/styles.scss';
+@import '../../common/css/base/base';
+
+.islander {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: $lg-desktop;
+    width: 100%;
+    padding: 20px 40px;
+
+    $aside-l-w: 575px;
+    $tabs-w: 88px;
+
+    aside.islander-sidebar {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: $aside-l-w;
+        width: 100%;
+        height: calc(100vh - #{$header-height} - 40px);
+        background-color: rgba(244, 245, 246, 0.8);
+        border-radius: 20px;
+        overflow: hidden;
+        margin: 0 20px 0 0;
+        .islander-sidebar--tabs {
+            position: relative;
+            width: $tabs-w;
+            align-self: stretch;
+            flex-grow: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 16px;
+            background-color: #fff;
+            border-radius: 20px 0 0 20px;
+            ul.islander-sidebar--tabs-list {
+                position: relative;
+                list-style: none;
+            }
+        }
+        .islander-sidebar--cards {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            width: calc(100% - #{$tabs-w});
+            gap: 8px;
+            height: fit-content;
+            max-height: 100%;
+            overflow-x: hidden;
+            overflow-y: auto;
+            padding: 8px 8px 16px 8px;
+            & > * {
+                margin: 8px 0 0 8px;
+            }
+        }
+    }
+    #islander-build {
+        position: relative;
+        width: calc(100% - #{$aside-l-w} - 20px);
+        background-color: rgba(244, 245, 246, 0.8);
+        border-radius: 20px;
+        background-size: cover;
+        background-position: center center;
+        .map {
+            position: relative;
+            overflow-x: auto;
+            overflow-y: hidden;
+            // top: 30%;
+            // width: 700px;
+            // // height: 700px;
+            // left: 50%;
+            width: 100%;
+            height: 100%;
+            // top: 0;
+            // left: 0;
+            // overflow-y: hidden;
+            // transform: translateX(-50%) translateY(-30%);
+        }
+        .btn-group {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            gap: 8px;
+
+            .btn-edit {
+                padding: 1rem;
+                border-bottom-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+            .btn-exit {
+                padding: 1rem;
+                border-bottom-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+
+            &-top {
+                position: absolute;
+                right: 0;
+                display: flex;
+                margin: 1rem;
+                gap: 10px;
+
+                button {
+                    padding: 14.5px 1rem;
+                    background-color: rgba(0, 0, 0, 0.05);
+                    border-radius: 16px;
+                }
+            }
+
+            &-bottom {
+                position: absolute;
+                left: 50%;
+                bottom: 35px;
+                transform: translate(-50%, -50%);
+                display: flex;
+                gap: 10px;
+                padding: 8px;
+                background-color: rgba(0, 0, 0, 0.05);
+                border-radius: 1000px;
+                z-index: 10;
+
+                button {
+                    border-radius: 1000px;
+                    font-family: 'Poppins';
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                }
+
+                .btn-save {
+                    padding: 13px 39.5px;
+                    background-color: #007aff;
+                    color: #fff;
+
+                    &:hover {
+                        background-color: darken(#007aff, 10%);
+                    }
+
+                    &:disabled {
+                        opacity: 0.5;
+                    }
+                }
+
+                .btn-cancel {
+                    padding: 13px 30px;
+                    background-color: #fff;
+                    color: #474747;
+
+                    &:hover {
+                        background-color: darken(#fff, 10%);
+                    }
+                }
+            }
+        }
+    }
+}
